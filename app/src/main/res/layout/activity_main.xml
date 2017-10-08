@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.two_dimensionalcode.MainActivity"
+
+    android:orientation="vertical">
+
+    <Button
+        android:text="开始扫描"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scan"/>
+    <TextView
+        android:id="@+id/tv_showResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <EditText
+        android:id="@+id/et_text"
+        android:hint="请输入文字"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="make"
+        android:text="生成二维码"/>
+    <CheckBox
+        android:id="@+id/cb_logo"
+        android:layout_width="wrap_content"
+        android:text="Logo"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img_shouw"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
